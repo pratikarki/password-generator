@@ -52,8 +52,7 @@ export class AppComponent {
       generatedPassword += validCharacters[randomIndex];
     }
 
-    console.log(generatedPassword)
-
+    // console.log(generatedPassword);
     this.finalPassword = generatedPassword;
   }
 }
