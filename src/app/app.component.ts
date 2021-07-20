@@ -38,7 +38,7 @@ export class AppComponent {
 
     const allLetters = 'abcdefghijklmnopqrstuvwxyz';
     const allNumbers = '0123456789';
-    const allSymbols = '~!@#$%^&*_-,.';
+    const allSymbols = '~`!@#$%^&*()+=_-{}[]:;"\'?/<>,.';
 
     let validCharacters = '';
     if (this.useLetter) validCharacters += allLetters;
