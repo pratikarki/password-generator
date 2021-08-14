@@ -16,9 +16,9 @@ export class AppComponent {
 
   setUserLength(event: Event) {
     const value = (event.target as HTMLInputElement).value;
-
     const parsedValue = parseInt(value); //if value has letters, parsedValue will be NaN
-    if (!isNaN(parsedValue)) this.givenLength = parsedValue;
+    
+    this.givenLength = isNaN(parsedValue) ? 0 : parsedValue;
   }
 
   toggleUseLetter() {
